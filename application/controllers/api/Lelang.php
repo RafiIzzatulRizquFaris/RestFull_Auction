@@ -12,9 +12,9 @@ class Lelang extends RestController
 	 *
 	 * @return Response
 	 */
-	public function __construct()
+	public function __construct($config = 'rest')
 	{
-		parent::__construct();
+		parent::__construct($config);
 		$this->load->database();
 	}
 
