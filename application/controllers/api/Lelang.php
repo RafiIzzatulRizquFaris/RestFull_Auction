@@ -9,13 +9,6 @@ use chriskacerguis\RestServer\RestController;
 class Lelang extends RestController
 {
 
-	// selanjutnya, buat method __construct() untuk load database
-	public function __construct()
-	{
-		parent::__construct();
-		$this->load->database();
-	}
-
 	// method ini untuk mengambil data menggunakan metode GET berparameter id barang
 	public function index_get($id = 0)
 	{
